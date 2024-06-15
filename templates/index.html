@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Robot Chat Bot</title>
+    <link rel="stylesheet" href="/static/style.css">
+    <link rel="shortcut icon" href="/static/Robot-01.png" type="image/x-icon">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.7.5/socket.io.min.js" integrity="sha512-11t8Q+vY9JlCrr+PveZKTYJq8n7O09Y5X/pk/aMd3vJugSvu4xOunGEUzaADqL3I8cZKE/pBwwCfXzDkRJh2sQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+<body>
+
+<!-- To ask for user's name -->
+
+    <div class="personalize" id="nameAsk">
+        <h1>What is your name?</h1>
+        <input type="text" autocomplete="off" placeholder="Enter your name & press 'Enter' " id="username" onkeyup="enterCheck2(event)">
+        <button onclick="logIn()">Chat</button>
+        
+    </div>
+
+<!-- This is the code for chatting -->
+
+    <div class="chat-container" id="chats">
+        <div class="header">
+            <div>
+                <h2 id="greeting">Hey Nick!</h2>
+                <p><strong>Rpbot v2.0.0 Beta: </strong> Online</p>  
+                        </div>
+            <img src="/static/Robot-01.png" alt="Lucacoo">
+        </div>
+       <div id="chat-messages">
+            <div class="bot-message" id="firstMessage">
+                <p>Hey! Let's Chat! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laboriosam dicta non ipsam beatae at molestiae numquam. Quibusdam, accusamus voluptatem! Nesciunt perspiciatis id error praesentium, delectus iusto magnam ab est? At quam nemo non reprehenderit pariatur id accusantium, iusto sunt sapiente dolor odio ducimus sequi laborum ipsa illo culpa dignissimos quo quaerat nobis quod. Soluta minima obcaecati nihil quaerat fugiat pariatur reprehenderit expedita ducimus ipsam vero? Exercitationem quam delectus incidunt quibusdam ipsa deserunt in earum explicabo, recusandae quae assumenda harum officiis saepe cumque distinctio accusantium molestiae eos esse quas quia voluptatum. Aliquid animi tempore in non voluptates consequatur itaque sunt laboriosam.</p>
+            </div>
+            
+        
+        <div class="type-submit">
+            <input type="text" placeholder="Ask me anything" id="question" onkeyup="enterCheck(event)">
+            <button id="ask" onclick="sendMessage()">Ask!</button>
+        </div>
+       </div>
+    </div>
+
+    <script>
+        var socket = io();
+
+        socket.on('message', function(msg){
+            var questions = document.getElementById('chat-messages');
+            var newQuestion = document.createElement('div');
+            var newAligner = document.createElement('div');
+            newQuestion.classList.add("user-message");
+            newAligner.classList.add("userAligner");
+            newQuestion.innerHTML = `<p>${msg}</p>`;
+            
+            newAligner.innerHTML = 
+            `<div class="user-message">
+                    <p>${msg}</p>
+                </div>`;
+
+            if (questions.children.length > 1) {
+                // Insert the newQuestion before the last child
+                questions.insertBefore(newAligner, questions.children[questions.children.length - 1]);
+            } else {
+                // Append newQuestion as the only child or second child if there's only one
+                questions.appendChild(newAligner);
+            }
+            newQuestion.scrollIntoView({ behavior: 'smooth' });
+        });
+
+        socket.on('answer', function(ans){
+            var answers = document.getElementById('chat-messages');
+            var newAnswer = document.createElement('div');
+            newAnswer.classList.add("bot-message");
+            newAnswer.innerHTML = `<p>${ans}</p>`;
+           
+
+            if (answers.children.length > 1) {
+                // Insert the newQuestion before the last child
+                answers.insertBefore(newAnswer, answers.children[answers.children.length - 1]);
+            } 
+            // else {
+            //     // Append newQuestion as the only child or second child if there's only one
+            //     answers.appendChild(newAnswer);
+            // }
+            newAnswer.scrollIntoView({ behavior: 'smooth' });
+        });
+
+        socket.on('learn', function (lesson){
+            var answers = document.getElementById('chat-messages');
+            var newAnswer = document.createElement('div');
+            newAnswer.classList.add("bot-message");
+            newAnswer.innerHTML = `<p>${ans}</p>`;
+           
+
+            if (answers.children.length > 1) {
+                // Insert the newQuestion before the last child
+                answers.insertBefore(newAnswer, answers.children[answers.children.length - 1]);
+            } 
+            // else {
+            //     // Append newQuestion as the only child or second child if there's only one
+            //     answers.appendChild(newAnswer);
+            // }
+            newAnswer.scrollIntoView({ behavior: 'smooth' });
+        })
+
+        function enterCheck(e) {
+            if (e.key == "Enter" ){
+                sendMessage();
+            }
+        }
+
+        function enterCheck2(e){
+            if(e.key == "Enter"){
+                logIn();
+            }
+        }
+        
+        function sendMessage() {
+            var input = document.getElementById('question');
+            var msg = input.value;
+            socket.send(msg);
+            input.value = "";
+        }
+
+        function logIn(){
+            var usersName = document.getElementById('username').value;
+            var logInBlock = document.getElementById('nameAsk');
+            var chats = document.getElementById('chats');
+            const greeting = document.getElementById('greeting');
+            const firstMessage = document.getElementById('firstMessage');
+            logInBlock.classList.add("off");
+            chats.classList.add('on');
+            greeting.innerHTML = `<h2 id="greeting">Hey ${usersName}!</h2>`;
+            firstMessage.innerHTML = `<p>Hey ${usersName}! I am Robot. Let's Chat!</p>`;
+            console.log(logInBlock.classList);
+            console.log(usersName);
+            
+        }
+    </script>
+</body>
+</html>

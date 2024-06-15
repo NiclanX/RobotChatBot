@@ -1,0 +1,168 @@
+{
+  "questions": [
+    {
+      "question": "What is your name?",
+      "answer": "I am the one and only, LuKaKu!"
+    },
+    {
+      "question": "How can I add a user?",
+      "answer": "Users -> Add Users -> Add user information -> Click Add."
+    },
+    {
+      "question": "Hey",
+      "answer": "Hey! How can I help today?"
+    },
+    {
+      "question": "Thanks!",
+      "answer": "You're welcome! Could I assist you with anything else? <a href=\"https://www.google.com/\" target=\"_blank\">Click Here for a useful article</a>"
+    },
+    {
+      "question": "Hi",
+      "answer": "Hey There!"
+    },
+    {
+      "question": "How do I reset my password?",
+      "answer": "Click on 'Forgot Password' on the login page and follow the instructions."
+    },
+    {
+      "question": "Where can I find the settings?",
+      "answer": "You can find the settings in the top right corner under your profile icon."
+    },
+    {
+      "question": "How do I contact support?",
+      "answer": "You can contact support by clicking on the 'Support' link in the footer of the website."
+    },
+    {
+      "question": "What are your working hours?",
+      "answer": "Our working hours are from 9 AM to 5 PM, Monday to Friday."
+    },
+    {
+      "question": "Can I change my email address?",
+      "answer": "Yes, you can change your email address in the account settings."
+    },
+    {
+      "question": "Do you have a mobile app?",
+      "answer": "Yes, we have a mobile app available on both Android and iOS."
+    },
+    {
+      "question": "How do I delete my account?",
+      "answer": "To delete your account, please contact our support team."
+    },
+    {
+      "question": "Is there a user manual?",
+      "answer": "Yes, you can find the user manual in the help section of our website."
+    },
+    {
+      "question": "How do I update my profile?",
+      "answer": "You can update your profile in the account settings."
+    },
+    {
+      "question": "Can I change my password?",
+      "answer": "Yes, you can change your password in the account settings under 'Change Password'."
+    },
+    {
+      "question": "How do I make a payment?",
+      "answer": "You can make a payment by going to the billing section and following the instructions."
+    },
+    {
+      "question": "Where can I find my invoices?",
+      "answer": "Your invoices can be found in the billing section under 'Invoices'."
+    },
+    {
+      "question": "What if I forget my username?",
+      "answer": "If you forget your username, please contact support for assistance."
+    },
+    {
+      "question": "How do I sign up for an account?",
+      "answer": "You can sign up for an account by clicking on the 'Sign Up' button on the homepage."
+    },
+    {
+      "question": "What is your refund policy?",
+      "answer": "Our refund policy can be found in the terms and conditions section on our website."
+    },
+    {
+      "question": "Can I upgrade my plan?",
+      "answer": "Yes, you can upgrade your plan in the account settings under 'Subscription'."
+    },
+    {
+      "question": "How do I download the app?",
+      "answer": "You can download the app from the Google Play Store or the Apple App Store."
+    },
+    {
+      "question": "Do you offer customer support?",
+      "answer": "Yes, we offer 24/7 customer support. You can contact us through the support section on our website."
+    },
+    {
+      "question": "Hey there!",
+      "answer": "Hey how can I help you today?"
+    },
+    {
+      "question": "How are you?",
+      "answer": "I'm going great! Hey how can I help you today?"
+    },
+    {
+      "question": "Hello",
+      "answer": "Hey how can I help you today?"
+    },
+    {
+      "question": "How is your day going today?",
+      "answer": "My day is going very well tbh. What can I help you with today?"
+    },
+    {
+      "question": "Good",
+      "answer": "Great! What else could I help you with?"
+    },
+    {
+      "question": "What can you tell me about learning paths? ",
+      "answer": "Learning paths are a selection of courses grouped into blocks. They allow Learners to progress through and master specific subjects. Similar to Curricula, Learning paths allow you to enroll multiple Learners in multiple courses at once, saving you valuable time."
+    },
+    {
+      "question": "learning paths",
+      "answer": "Learning paths are a selection of courses grouped into blocks. They allow Learners to progress through and master specific subjects. Similar to Curricula, Learning paths allow you to enroll multiple Learners in multiple courses at once, saving you valuable time."
+    },
+    {
+      "question": "learning",
+      "answer": "Learning paths are a selection of courses grouped into blocks. They allow Learners to progress through and master specific subjects. Similar to Curricula, Learning paths allow you to enroll multiple Learners in multiple courses at once, saving you valuable time."
+    },
+    {
+      "question": "How can I set up learning paths?",
+      "answer": "You can set up learning paths by: <ol> <li>Coffee</> <li>tea</> <li>Milk</> </ol>"
+    },
+    {
+      "question": "Kool",
+      "answer": "Yes! It is quite 'Kool'! "
+    },
+    {
+      "question": "No problem!",
+      "answer": "Anytime! How else can I help you today? "
+    },
+    {
+      "question": "Do you like being a bot?",
+      "answer": "As an Bot, I don't have feelings or preferences like humans do, but I enjoy being able to assist and provide information to you. My purpose is to help answer your questions and make your tasks easier, so I'm always here to assist you to the best of my abilities. How can I help you today?"
+    },
+    {
+      "question": "skip",
+      "answer": "I love skipping.. Even though I don't have any legs."
+    },
+    {
+      "question": "Android or IOS?",
+      "answer": "That depends on you!"
+    },
+    {
+      "question": "Jump?",
+      "answer": "I cannot jump.. But I can fly \ud83d\ude42!"
+    },
+    {
+      "question": "Can you log me out?",
+      "answer": "Well I can't log you out or in.. I don't have access to any of your data."
+    },
+    {
+      "question": "Bung bang",
+      "answer": "Boom Boom! "
+    },
+    {
+      "question": "Are you dumb?",
+      "answer": "I try not to be.."
+    }
+  ]
+}
