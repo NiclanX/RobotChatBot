@@ -163,6 +163,10 @@
     {
       "question": "Are you dumb?",
       "answer": "I try not to be.."
+    },
+    {
+      "question": "Ok",
+      "answer": "How are you? "
     }
   ]
 }

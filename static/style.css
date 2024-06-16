@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+ @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 body {
     font-family: Poppins, sans-serif;
@@ -12,20 +12,38 @@ body {
 }
 
 :root {
-    --bot-color: #29a845;
-    --bot-text: #fdfdfd;
-    --bg-color: #877e96ef;
+    --bot-color: #c7c7c7;
+    --bot-text: #000000;
+    --bg-color: #8493bd;
     --user-color: #1f3f97;
-    --button-color: #29a845;
+    --button-color: #9c9e9c;
     --chat-container: #ffffff;
     --username-color: #473f3f;
     --chat-padding: 10px;
     --chat-margins: 1.5rem;  
-    --image-scale: calc(512px / 8); 
+    --image-scale: calc(512px / 8);
+    --Banner-Color: var(--bg-color); 
+
+    --light-color: #505050;
 }
 
+.image_icon {
+    display: flex;
+    align-items: center;
+}
+
+.material-symbols-outlined {
+    font-size: 2.5rem;
+    color: var(--light-color);
+}
+
+.material-symbols-outlined:hover {
+    cursor: pointer;
+}
+ 
+
 .header {
-    background: var(--button-color);
+    background: var(--Banner-Color);
     /* text-align: center; */
     margin-bottom: 20px;
     position: sticky;
@@ -151,12 +169,13 @@ p {
 }
 
 .bot-message {
-    background-color: var(--bot-color);    
+    background-color: var(--bot-color);
+    color: #232323;    
     padding: 5px;
     margin-bottom: var(--chat-margins);
     width: fit-content;
     max-width: 60%;
-    border-radius: var(--chat-padding) var(--chat-padding) var(--chat-padding) 0px  ;
+    border-radius: 0px var(--chat-padding) var(--chat-padding) var(--chat-padding)  ;
     
 
     
@@ -168,7 +187,7 @@ p {
 }
 
 .user-message {
-    background-color: var(--user-color);
+    background-color: var(--bg-color);
     padding: 5px;    
     margin-bottom: var(--chat-margins);
     width: fit-content;
@@ -176,14 +195,12 @@ p {
     text-align: right;
     /* position: relative; */
     /* right: 20px; */
-    border-radius: var(--chat-padding) var(--chat-padding) 0px var(--chat-padding) ;  
+    border-radius: var(--chat-padding) 0px var(--chat-padding) var(--chat-padding) ;  
    
     
 }
 
-.user-message::before {
-    content: "Name";
-}
+
 
 .userAligner {
     display: flex;
