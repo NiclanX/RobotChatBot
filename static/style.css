@@ -9,24 +9,62 @@ body {
     height: 100vh;
     margin: 0px;
     box-sizing: border-box;
+    transition: all 0.5s ease;
+    color: #000;
+}
+
+input {
+    width: 100%;
+    height: 40px;    
+    padding: 0px 10px;
+    background-color: var(--user-input);
+    border: none;
+    outline: none;
 }
 
 :root {
-    --bot-color: #c7c7c7;
-    --bot-text: #000000;
-    --bg-color: hsl(224, 30%, 63%);
-    --bg-color-darker: hsl(224, 30%, 32%);
-    --user-color: #4b74e3;
+    --bot-color: #e0e0e0;
+    --bot-text: #000;
+
+    --bg-color: hsl(0, 0%, 91%);
+    --bg-color-darker: hsl(0, 0%, 82%);
+
+    --user-color: #0e7df3;
+
     --button-color: #32c432;
+
     --chat-container: #ffffff;
-    --username-color: #473f3f;
+    
+    --Banner-Color: #dfdfdf; 
+
     --chat-padding: 10px;
     --chat-margins: 1.5rem;  
     --image-scale: calc(512px / 8);
-    --Banner-Color: var(--bg-color); 
+    --icon-color: #000;
 
     --light-color: #505050;
+    --user-input: #c2c2c2;
 }
+
+.night-mode {
+  --chat-container: #272727; 
+  --bot-color: #424242;
+  --bot-text: #fff;
+  --Banner-Color: #060606;
+  color: white;
+  --user-input: #000;
+  background-image: none;
+  background-color: #000;
+  
+  
+  } 
+
+ 
+  
+  .night-mode input {
+    color: var(--bot-text);
+    border-bottom: 2px solid white;
+  }
 
 /* bot icon and darkmode image  */
 .image_icon {
@@ -35,7 +73,8 @@ body {
 }
 
 .material-symbols-outlined {
-    font-size: 2.5rem;
+    font-size: 1.8rem;
+    color: var(--icon--color);
 
 }
 
@@ -53,7 +92,7 @@ body {
     display: flex;
     justify-content: space-between;
     box-shadow: 4px 4px 1px #44434365;
-    color: #fff;
+    
 }
 
 
@@ -68,7 +107,7 @@ body {
 
 
 h1  {
-    color: var(--chat-container);
+    
     text-align: center;
     margin: 0px;
     padding: 0px;
@@ -126,9 +165,7 @@ img {
     border: none;
 }
 
-.personalize .material-symbols-outlined {
-    color: #fff;
-}
+
 
 .chat-container {
     background-color: var(--chat-container);
@@ -154,14 +191,14 @@ display: block;
 }
 
 p {
-    color: #fff;
+    
     font-size: 14px;
     margin: 5px 2px;
 }
 
 .bot-message {
+    
     background-color: var(--bot-color);
-    color: #0f0f0f;    
     padding: 2px;
     margin-bottom: var(--chat-margins);
     width: fit-content;
@@ -175,13 +212,17 @@ p {
 }
 
 .user-message {
-    background-color: var(--bg-color);
+    background-color: var(--user-color);
     padding: 2px;    
     margin-bottom: var(--chat-margins);
     width: fit-content;
     max-width: 60%;
     text-align: right;
     border-radius: var(--chat-padding) 0px var(--chat-padding) var(--chat-padding) ;  
+}
+
+.user-message p {
+    color: white;
 }
 
 .userAligner {
@@ -196,13 +237,7 @@ p {
     bottom: 5px;
 }
 
-input {
-    width: 100%;
-    height: 40px;    
-    padding: 0px 10px;
-    background-color: #c2c2c2;
-    border: none;
-}
+
 
 button {
     width: 20%;
@@ -281,7 +316,6 @@ button {
     background-image: linear-gradient(var(--bg-color), var(--bg-color-darker));
     text-align: center;
     margin-bottom: 20px;
-    /* position: absolute; */
     top: 0;
     width: 100%;
     left: 0;
