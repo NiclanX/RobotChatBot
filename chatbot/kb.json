@@ -167,6 +167,10 @@
     {
       "question": "Ok",
       "answer": "How are you? "
+    },
+    {
+      "question": "",
+      "answer": "Hey"
     }
   ]
 }

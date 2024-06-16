@@ -17,6 +17,9 @@
         <h1>What is your name?</h1>
         <input type="text" autocomplete="off" placeholder="Enter your name & press 'Enter' " id="username" onkeyup="enterCheck2(event)">
         <button onclick="logIn()">Chat</button>
+        <span class="material-symbols-outlined">
+            mode_night
+        </span>
         
     </div>
 
@@ -45,6 +48,7 @@
         <div class="type-submit">
             <input type="text" placeholder="Ask me anything" id="question" onkeyup="enterCheck(event)">
             <button id="ask" onclick="sendMessage()">Ask!</button>
+            
         </div>
        </div>
     </div>
@@ -144,6 +148,8 @@
             console.log(usersName);
             
         }
+
     </script>
+    <script src="static/script.js"></script>
 </body>
 </html>

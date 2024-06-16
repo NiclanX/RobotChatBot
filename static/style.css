@@ -2,7 +2,7 @@
 
 body {
     font-family: Poppins, sans-serif;
-    background-color: var(--bg-color);
+    background-image: linear-gradient(var(--bg-color), var(--bg-color-darker));
     display: flex;
     justify-content: center;
     align-items: center;
@@ -14,9 +14,10 @@ body {
 :root {
     --bot-color: #c7c7c7;
     --bot-text: #000000;
-    --bg-color: #8493bd;
-    --user-color: #1f3f97;
-    --button-color: #9c9e9c;
+    --bg-color: hsl(224, 30%, 63%);
+    --bg-color-darker: hsl(224, 30%, 32%);
+    --user-color: #4b74e3;
+    --button-color: #32c432;
     --chat-container: #ffffff;
     --username-color: #473f3f;
     --chat-padding: 10px;
@@ -27,6 +28,7 @@ body {
     --light-color: #505050;
 }
 
+/* bot icon and darkmode image  */
 .image_icon {
     display: flex;
     align-items: center;
@@ -34,17 +36,16 @@ body {
 
 .material-symbols-outlined {
     font-size: 2.5rem;
-    /* color: var(--light-color); */
+
 }
 
 .material-symbols-outlined:hover {
     cursor: pointer;
 }
- 
+
 
 .header {
-    background: var(--Banner-Color);
-    /* text-align: center; */
+    background-color: var(--Banner-Color);    
     margin-bottom: 20px;
     position: sticky;
     top: 0px;
@@ -73,13 +74,9 @@ h1  {
     padding: 0px;
 }
 
-h2 {
-    
-  
-       
+h2 {       
   margin: 0px;
-  
-   
+    
 }
 
 img {
@@ -104,19 +101,20 @@ img {
 }
 
 .personalize {
-    /* background-color: #44aa14; */
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
     
     
 }
 
 .personalize input {
-    margin: 0;
+    margin: 10px;
     text-align: center;
     font-size: 12pt;
     width: 100%;
+    border-radius: var(--chat-padding);
 }
 
 
@@ -128,7 +126,9 @@ img {
     border: none;
 }
 
-
+.personalize .material-symbols-outlined {
+    color: #fff;
+}
 
 .chat-container {
     background-color: var(--chat-container);
@@ -153,32 +153,20 @@ display: block;
     display: none;
 }
 
-ol {
-    color: #fff;
-    margin: 0px;
-    font-size: 14px;
-    padding: 20px;
-    
-}
-
-
-
 p {
     color: #fff;
     font-size: 14px;
+    margin: 5px 2px;
 }
 
 .bot-message {
     background-color: var(--bot-color);
-    color: #232323;    
-    padding: 5px;
+    color: #0f0f0f;    
+    padding: 2px;
     margin-bottom: var(--chat-margins);
     width: fit-content;
     max-width: 60%;
     border-radius: 0px var(--chat-padding) var(--chat-padding) var(--chat-padding)  ;
-    
-
-    
 }
 
 .bot-message p{
@@ -188,36 +176,24 @@ p {
 
 .user-message {
     background-color: var(--bg-color);
-    padding: 5px;    
+    padding: 2px;    
     margin-bottom: var(--chat-margins);
     width: fit-content;
     max-width: 60%;
     text-align: right;
-    /* position: relative; */
-    /* right: 20px; */
     border-radius: var(--chat-padding) 0px var(--chat-padding) var(--chat-padding) ;  
-   
-    
 }
-
-
 
 .userAligner {
     display: flex;
     justify-content: end;
 }
 
-
-
 .type-submit {
     width: 100%;
     display: flex;
     position:sticky;
     bottom: 5px;
-    
-    /* background-color: var(--chat-container);  */
-       
-
 }
 
 input {
@@ -228,8 +204,6 @@ input {
     border: none;
 }
 
-
-
 button {
     width: 20%;
     margin-left: 10px;
@@ -239,7 +213,6 @@ button {
     color: #fff;
     display: none;
     transition: all 0.3s ease;
-    
 }
 
 button:hover {
@@ -257,23 +230,20 @@ button:hover {
 @media screen and (max-width: 600px){
     .chat-container {
         background-color: var(--chat-container);
-        width: 100%;           
+       min-width: 100%;           
        overflow-y:scroll;
-       /* overflow-x: hidden; */
-       height: 100%;
-       max-height: 100vh;
-       padding: 0px;
-       position: absolute;
+       overflow-x: hidden;
+       min-height: 100vh;
+       /* padding: 20px; */
+       position: fixed;
       
        
        
     }
 
     .type-submit{
-        position: fixed;
-        margin-bottom: 10px;
-        bottom: 0px;
-        
+    
+    bottom: 5px;
     }
 
     input {
@@ -294,11 +264,21 @@ button {
     border: none;
     color: #fff;
     display: block;
+    margin-bottom: px;
     
 }
 
+.personalize button {
+    margin-top: 10px;
+    width: 40%;
+    padding: var(--chat-padding);
+    border-radius: 8px;
+    border: none;
+    margin-bottom: 10px;
+}
+
 .header {
-    background: var(--button-color);
+    background-image: linear-gradient(var(--bg-color), var(--bg-color-darker));
     text-align: center;
     margin-bottom: 20px;
     /* position: absolute; */
@@ -306,13 +286,23 @@ button {
     width: 100%;
     left: 0;
     padding: 5px;
-    display: block;
-    
+    display: flex;
+    flex-direction: column;
+    box-shadow: none;
+    align-items: center;
 
    justify-content: space-evenly;
     
     
 
+}
+
+.bot-message {
+    margin-left: 10px;
+}
+
+.user-message {
+    margin-right: 10px;
 }
 
 img {
