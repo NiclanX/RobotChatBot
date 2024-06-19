@@ -31,7 +31,7 @@ input {
 
     --user-color: #0e7df3;
 
-    --button-color: #32c432;
+    --button-color: #0e7df3;
 
     --chat-container: #ffffff;
     
@@ -263,6 +263,12 @@ button:hover {
 }
 
 @media screen and (max-width: 600px){
+    
+    body {
+        background-image: none;
+        background-color: #fff;
+    }
+    
     .chat-container {
         background-color: var(--chat-container);
        min-width: 100%;           
@@ -285,7 +291,7 @@ button:hover {
     width: 90%;
     height: 40px;    
     padding: 0px 10px;
-    background-color: #c2c2c2;
+    background-color: var(--user-input);
     border: none;
 }
 
@@ -313,7 +319,7 @@ button {
 }
 
 .header {
-    background-image: linear-gradient(var(--bg-color), var(--bg-color-darker));
+    /* background-image: linear-gradient(var(--bg-color), var(--bg-color-darker)); */
     text-align: center;
     margin-bottom: 20px;
     top: 0;

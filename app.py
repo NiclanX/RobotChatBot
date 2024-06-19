@@ -23,12 +23,10 @@ def handleMessage(msg):
     global lastQuestion
 
     if learningTime == False:
-        print('Message: ' + msg)
         lastQuestion = msg
         send(msg, broadcast=True)
         answer = nick.chat_bot(msg)
         if answer == "I Don't know how to respond &#128531;... Perhaps I could help you with something else? &#128526; or.. You could teach me. Type the answer to your message or type 'skip' to skip":
-            print("Learnin Time!")
             socketio.emit('answer', answer)
             learningTime = True
         else:

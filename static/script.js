@@ -12,7 +12,7 @@ function btnClicked() {
     body.classList.toggle('night-mode');
     chatContainer.classList.toggle('night-mode');
     personalizeInput.classList.toggle('night-mode');
-    // alert("Btns Clicked");
+    
 
     if (body.classList.contains('night-mode')) {
         toggles.forEach(element => {

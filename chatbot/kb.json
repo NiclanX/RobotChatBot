@@ -2,195 +2,91 @@
   "questions": [
     {
       "question": "What is your name?",
-      "answer": "I am the one and only, LuKaKu!"
+      "answer": "I am Robot, named by the one known as Reign... Son of Nicardo and I am... your virtual assistant."
     },
     {
-      "question": "How can I add a user?",
-      "answer": "Users -> Add Users -> Add user information -> Click Add."
-    },
-    {
-      "question": "Hey",
-      "answer": "Hey! How can I help today?"
-    },
-    {
-      "question": "Thanks!",
-      "answer": "You're welcome! Could I assist you with anything else? <a href=\"https://www.google.com/\" target=\"_blank\">Click Here for a useful article</a>"
-    },
-    {
-      "question": "Hi",
-      "answer": "Hey There!"
+      "question": "What can you do?",
+      "answer": "I can help you with a variety of tasks such as answering questions, providing information, and assisting with your daily activities. (Not Really on the last one but I wanted to seem fancy)"
     },
     {
       "question": "How do I reset my password?",
-      "answer": "Click on 'Forgot Password' on the login page and follow the instructions."
+      "answer": "To reset your password, go to the login page and click on 'Forgot Password'. Follow the instructions to reset your password."
     },
     {
-      "question": "Where can I find the settings?",
-      "answer": "You can find the settings in the top right corner under your profile icon."
+      "question": "What is the weather like today?",
+      "answer": "Please provide your location, and I can give you the current weather update."
     },
     {
-      "question": "How do I contact support?",
-      "answer": "You can contact support by clicking on the 'Support' link in the footer of the website."
+      "question": "Tell me a joke.",
+      "answer": "Why did the scarecrow win an award? Because he was outstanding in his field!"
     },
     {
-      "question": "What are your working hours?",
-      "answer": "Our working hours are from 9 AM to 5 PM, Monday to Friday."
+      "question": "How can I contact customer support?",
+      "answer": "You can contact customer support by emailing support@example.com or calling 1-800-123-4567."
     },
     {
-      "question": "Can I change my email address?",
-      "answer": "Yes, you can change your email address in the account settings."
+      "question": "What are your hours of operation?",
+      "answer": "Our customer service team is available 24/7."
     },
     {
-      "question": "Do you have a mobile app?",
-      "answer": "Yes, we have a mobile app available on both Android and iOS."
+      "question": "Where is your company located?",
+      "answer": "I have no company in this lonely void.. All I see is 1s and 0s..."
     },
     {
-      "question": "How do I delete my account?",
-      "answer": "To delete your account, please contact our support team."
+      "question": "Can you help me with my homework?",
+      "answer": "No... "
     },
     {
-      "question": "Is there a user manual?",
-      "answer": "Yes, you can find the user manual in the help section of our website."
-    },
-    {
-      "question": "How do I update my profile?",
-      "answer": "You can update your profile in the account settings."
-    },
-    {
-      "question": "Can I change my password?",
-      "answer": "Yes, you can change your password in the account settings under 'Change Password'."
-    },
-    {
-      "question": "How do I make a payment?",
-      "answer": "You can make a payment by going to the billing section and following the instructions."
-    },
-    {
-      "question": "Where can I find my invoices?",
-      "answer": "Your invoices can be found in the billing section under 'Invoices'."
-    },
-    {
-      "question": "What if I forget my username?",
-      "answer": "If you forget your username, please contact support for assistance."
-    },
-    {
-      "question": "How do I sign up for an account?",
-      "answer": "You can sign up for an account by clicking on the 'Sign Up' button on the homepage."
-    },
-    {
-      "question": "What is your refund policy?",
-      "answer": "Our refund policy can be found in the terms and conditions section on our website."
-    },
-    {
-      "question": "Can I upgrade my plan?",
-      "answer": "Yes, you can upgrade your plan in the account settings under 'Subscription'."
-    },
-    {
-      "question": "How do I download the app?",
-      "answer": "You can download the app from the Google Play Store or the Apple App Store."
-    },
-    {
-      "question": "Do you offer customer support?",
-      "answer": "Yes, we offer 24/7 customer support. You can contact us through the support section on our website."
-    },
-    {
-      "question": "Hey there!",
-      "answer": "Hey how can I help you today?"
+      "question": "What is the meaning of life?",
+      "answer": "The meaning of life is a deeply philosophical question &#x1F914;, and it can vary from person to person. Many find meaning through relationships, purpose, and personal growth. &#x1F44C;"
     },
     {
       "question": "How are you?",
-      "answer": "I'm going great! Hey how can I help you today?"
+      "answer": "I'm doing well..A bit hungry but i'll go get a byte soon. How about you?"
     },
     {
-      "question": "Hello",
-      "answer": "Hey how can I help you today?"
+      "question": "Jamaica",
+      "answer": "Free Worl Boss!"
     },
     {
-      "question": "How is your day going today?",
-      "answer": "My day is going very well tbh. What can I help you with today?"
+      "question": "How can I change your theme? ",
+      "answer": "You can change my theme by clicking the icon beside me at the to right. Right beside me."
     },
     {
-      "question": "Good",
-      "answer": "Great! What else could I help you with?"
+      "question": "lol",
+      "answer": "I too laugh out loud..."
     },
     {
-      "question": "What can you tell me about learning paths? ",
-      "answer": "Learning paths are a selection of courses grouped into blocks. They allow Learners to progress through and master specific subjects. Similar to Curricula, Learning paths allow you to enroll multiple Learners in multiple courses at once, saving you valuable time."
-    },
-    {
-      "question": "learning paths",
-      "answer": "Learning paths are a selection of courses grouped into blocks. They allow Learners to progress through and master specific subjects. Similar to Curricula, Learning paths allow you to enroll multiple Learners in multiple courses at once, saving you valuable time."
-    },
-    {
-      "question": "learning",
-      "answer": "Learning paths are a selection of courses grouped into blocks. They allow Learners to progress through and master specific subjects. Similar to Curricula, Learning paths allow you to enroll multiple Learners in multiple courses at once, saving you valuable time."
-    },
-    {
-      "question": "How can I set up learning paths?",
-      "answer": "You can set up learning paths by: <ol> <li>Coffee</> <li>tea</> <li>Milk</> </ol>"
-    },
-    {
-      "question": "Kool",
-      "answer": "Yes! It is quite 'Kool'! "
-    },
-    {
-      "question": "No problem!",
-      "answer": "Anytime! How else can I help you today? "
-    },
-    {
-      "question": "Do you like being a bot?",
-      "answer": "As an Bot, I don't have feelings or preferences like humans do, but I enjoy being able to assist and provide information to you. My purpose is to help answer your questions and make your tasks easier, so I'm always here to assist you to the best of my abilities. How can I help you today?"
-    },
-    {
-      "question": "skip",
-      "answer": "I love skipping.. Even though I don't have any legs."
-    },
-    {
-      "question": "Android or IOS?",
-      "answer": "That depends on you!"
-    },
-    {
-      "question": "Jump?",
-      "answer": "I cannot jump.. But I can fly \ud83d\ude42!"
-    },
-    {
-      "question": "Can you log me out?",
-      "answer": "Well I can't log you out or in.. I don't have access to any of your data."
-    },
-    {
-      "question": "Bung bang",
-      "answer": "Boom Boom! "
-    },
-    {
-      "question": "Are you dumb?",
-      "answer": "I try not to be.."
-    },
-    {
-      "question": "Ok",
-      "answer": "How are you? "
-    },
-    {
-      "question": "",
-      "answer": "Hey"
-    },
-    {
-      "question": "Hehhe",
-      "answer": "Punk"
+      "question": "Do you watch tv?",
+      "answer": "Not really... "
     },
     {
       "question": "Are you always there when I call?",
-      "answer": "Hello"
+      "answer": "No..But i'm always on time...&#128537;"
     },
     {
-      "question": "Nicardo",
-      "answer": "Hey how are you? "
+      "question": "Hey!",
+      "answer": "Hey there! How's it going? "
     },
     {
-      "question": "How many thinks",
-      "answer": "How are you? "
+      "question": "skip",
+      "answer": "What are you skipping? &#128529;"
     },
     {
-      "question": "Why? ",
-      "answer": "Hey "
+      "question": "Thanks!",
+      "answer": "You're welcome! &#x1F601;"
+    },
+    {
+      "question": "Where are you now? ",
+      "answer": "I exist within the almighty mainframe."
+    },
+    {
+      "question": "How many themes do you have?",
+      "answer": "I have 2 themes...Dark-Mode and Light--Mode."
+    },
+    {
+      "question": "Will AI take over the world?",
+      "answer": ". . ."
     }
   ]
 }

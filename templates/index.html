@@ -30,7 +30,7 @@
         <div class="header">
             <div>
                 <h2 id="greeting">Hey Nick!</h2>
-                <p><strong>Robot v3.0.0 Beta: </strong> Online</p>  
+                <p><strong>Robot v3.0.0 Alpha Prime: </strong> Online</p>  
             </div>
             <div class="image_icon">
 
@@ -99,24 +99,8 @@
             newAnswer.scrollIntoView({ behavior: 'smooth' });
         });
 
-        socket.on('learn', function (lesson){
-            var answers = document.getElementById('chat-messages');
-            var newAnswer = document.createElement('div');
-            newAnswer.classList.add("bot-message");
-            newAnswer.innerHTML = `<p>${ans}</p>`;
-           
-
-            if (answers.children.length > 1) {
-                // Insert the newQuestion before the last child
-                answers.insertBefore(newAnswer, answers.children[answers.children.length - 1]);
-            } 
-            // else {
-            //     // Append newQuestion as the only child or second child if there's only one
-            //     answers.appendChild(newAnswer);
-            // }
-            newAnswer.scrollIntoView({ behavior: 'smooth' });
-        })
-
+        
+        
         function enterCheck(e) {
             if (e.key == "Enter" ){
                 sendMessage();

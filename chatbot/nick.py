@@ -25,7 +25,6 @@ def learn(question, answer):
 
     kb['questions'].append({"question": question, "answer": answer})
     save_kb('chatbot/kb.json', kb)
-    print("New response added!")
     return "Thanks for Teaching me! What else can I help your with today?"
           
      
@@ -40,10 +39,8 @@ def chat_bot(message):
 
         if best_match:
             answer: str = get_answer(best_match, kb)
-            print(f'Bot: {answer}')
             return answer
         else:
-            print('Bot: I don\'t know the answer. Can you teach me?')
             return "I Don't know how to respond &#128531;... Perhaps I could help you with something else? &#128526; or.. You could teach me. Type the answer to your message or type 'skip' to skip"
             
 if __name__ == '__main__':
