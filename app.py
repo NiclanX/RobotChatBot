@@ -8,7 +8,7 @@ socketio = SocketIO(app)
 
 learningTime: bool = False
 lastQuestion: str = ""
-easterEgg: str = "Hey!"
+easterEgg: str = "House Can Skate?"
 
 @app.route('/')
 def index():
